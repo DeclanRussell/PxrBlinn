@@ -3,4 +3,4 @@ Renderman BxDF plugin for blinn from the Microfacet Models for Refraction throug
 
 https://www.cs.cornell.edu/~srm/publications/EGSR07-btdf.pdf
 
-![alt tag](https://github.com/DeclanRussell/PxrBlinn/blob/master/images/BlinnExample.png) 
+![alt tag](https://github.com/DeclanRussell/PxrBlinn/blob/master/images/BlinnExmaple.png) 
