@@ -11,13 +11,13 @@ MAKEFILE      = Makefile.Debug
 
 CC            = cl
 CXX           = cl
-DEFINES       = -DUNICODE -DWIN32 -DWIN64 -DWIN32 -D_USE_MATH_DEFINES
+DEFINES       = -DUNICODE -DWIN32 -DWIN64 -DRENDERMAN21 -DWIN32 -D_USE_MATH_DEFINES
 CFLAGS        = -nologo -Zc:wchar_t -FS -Zi -MDd -W3 /Fddebug\PxrBlinn.pdb $(DEFINES)
 CXXFLAGS      = -nologo -Zc:wchar_t -FS -nologo -MT -Zi -MDd -GR -W3 -w34100 -w34189 -w44996 -EHsc /Fddebug\PxrBlinn.pdb $(DEFINES)
-INCPATH       = -I. -I"C:\Program Files\Pixar\RenderManProServer-20.5\include" -Iinclude -IC:\boost -I..\..\Qt\5.5\msvc2013_64\mkspecs\win32-msvc2013 
+INCPATH       = -I. -I"C:\Program Files\Pixar\RenderManProServer-21.2\include" -Iinclude -IC:\boost -I..\..\Qt\5.5\msvc2013_64\mkspecs\win32-msvc2013 
 LINKER        = link
 LFLAGS        = /NOLOGO /DYNAMICBASE /NXCOMPAT /DEBUG /DLL /SUBSYSTEM:WINDOWS
-LIBS          = /LIBPATH:"C:\Program Files\Pixar\RenderManProServer-20.5\lib" "C:\Program Files\Pixar\RenderManProServer-20.5\lib\libprman.lib" 
+LIBS          = /LIBPATH:"C:\Program Files\Pixar\RenderManProServer-21.2\lib" "C:\Program Files\Pixar\RenderManProServer-21.2\lib\libprman.lib" "C:\Program Files\Pixar\RenderManProServer-21.2\lib\librix.lib" 
 QMAKE         = D:\Qt\5.5\msvc2013_64\bin\qmake.exe
 IDC           = idc
 IDL           = midl
@@ -139,17 +139,17 @@ compiler_clean:
 
 ####### Compile
 
-obj\PxrBlinn.obj: src\PxrBlinn.cpp "C:\Program Files\Pixar\RenderManProServer-20.5\include\RixBxdf.h" \
-		"C:\Program Files\Pixar\RenderManProServer-20.5\include\RixShading.h" \
-		"C:\Program Files\Pixar\RenderManProServer-20.5\include\RixInterfaces.h" \
-		"C:\Program Files\Pixar\RenderManProServer-20.5\include\ri.h" \
-		"C:\Program Files\Pixar\RenderManProServer-20.5\include\prmanapi.h" \
-		"C:\Program Files\Pixar\RenderManProServer-20.5\include\RiTypesHelper.h" \
-		"C:\Program Files\Pixar\RenderManProServer-20.5\include\RixShadingUtils.h" \
-		"C:\Program Files\Pixar\RenderManProServer-20.5\include\RixBxdfLobe.h" \
-		"C:\Program Files\Pixar\RenderManProServer-20.5\include\RixRNG.h" \
-		"C:\Program Files\Pixar\RenderManProServer-20.5\include\RixRNGInline.h" \
-		"C:\Program Files\Pixar\RenderManProServer-20.5\include\RixRNGProgressive.h"
+obj\PxrBlinn.obj: src\PxrBlinn.cpp "C:\Program Files\Pixar\RenderManProServer-21.2\include\RixBxdf.h" \
+		"C:\Program Files\Pixar\RenderManProServer-21.2\include\RixBxdfLobe.h" \
+		"C:\Program Files\Pixar\RenderManProServer-21.2\include\RixInterfaces.h" \
+		"C:\Program Files\Pixar\RenderManProServer-21.2\include\prmanapi.h" \
+		"C:\Program Files\Pixar\RenderManProServer-21.2\include\ri.h" \
+		"C:\Program Files\Pixar\RenderManProServer-21.2\include\RiTypesHelper.h" \
+		"C:\Program Files\Pixar\RenderManProServer-21.2\include\RixShading.h" \
+		"C:\Program Files\Pixar\RenderManProServer-21.2\include\RixRNG.h" \
+		"C:\Program Files\Pixar\RenderManProServer-21.2\include\RixRNGInline.h" \
+		"C:\Program Files\Pixar\RenderManProServer-21.2\include\RixRNGProgressive.h" \
+		"C:\Program Files\Pixar\RenderManProServer-21.2\include\RixShadingUtils.h"
 
 ####### Install
 
