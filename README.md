@@ -7,4 +7,4 @@ https://www.cs.cornell.edu/~srm/publications/EGSR07-btdf.pdf
 
 Now supports rman21 simply comment in/out the define in the .pro file depending on if you are using rman21 or later
 
-![alt tag](https://github.com/DeclanRussell/PxrBeckmann/blob/master/images/BlinnExmapleRman21.png)
+![alt tag](https://github.com/DeclanRussell/PxrBlinn/blob/master/images/BlinnExmapleRman21.png)
